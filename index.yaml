@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  chase_chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-10-28T14:19:14.486033+09:00"
+    description: A Helm chart for Kubernetes
+    digest: 16ccdb2cf5e69f28040e28771fbe22d14f4f4b05d641794fab6bc02894e6f4c1
+    name: chase_chart
+    type: application
+    urls:
+    - https://github.com/kubeops2/get-kubeops/chase_chart-0.1.0.tgz
+    version: 0.1.0
+  joon_chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-10-28T14:19:14.486239+09:00"
+    description: A Helm chart for Kubernetes
+    digest: 9930159197eea59fddd8c90e33e2d8c5f1da2ef0d137e6d95b541323152752b1
+    name: joon_chart
+    type: application
+    urls:
+    - https://github.com/kubeops2/get-kubeops/charts/joon_chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-10-28T14:19:14.485753+09:00"
