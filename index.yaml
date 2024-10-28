@@ -1,25 +1,68 @@
 apiVersion: v1
 entries:
-  chase_chart:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2024-10-28T14:19:14.486033+09:00"
-    description: A Helm chart for Kubernetes
-    digest: 16ccdb2cf5e69f28040e28771fbe22d14f4f4b05d641794fab6bc02894e6f4c1
-    name: chase_chart
-    type: application
+  longhorn:
+  - apiVersion: v1
+    appVersion: v1.7.2
+    created: "2024-10-28T15:16:41.7496+09:00"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: 863c011cdc37dd0ad95595ed52b5ac43ef1394fa6012e607397f86e6b682be6a
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
     urls:
-    - https://github.com/kubeops2/get-kubeops/chase_chart-0.1.0.tgz
-    version: 0.1.0
-  joon_chart:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2024-10-28T14:19:14.486239+09:00"
-    description: A Helm chart for Kubernetes
-    digest: 9930159197eea59fddd8c90e33e2d8c5f1da2ef0d137e6d95b541323152752b1
-    name: joon_chart
-    type: application
+    - https://kubeops2.github.com/get-kubeops/charts/longhorn-1.7.2.tgz
+    version: 1.7.2
+  - apiVersion: v1
+    appVersion: v1.7.1
+    created: "2024-10-28T15:16:41.74645+09:00"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: d98c2b4fe25903e1a3c6fab250e3b7001e120b6a91f07344247d4019a52b355b
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
     urls:
-    - https://github.com/kubeops2/get-kubeops/charts/joon_chart-0.1.0.tgz
-    version: 0.1.0
-generated: "2024-10-28T14:19:14.485753+09:00"
+    - https://kubeops2.github.com/get-kubeops/charts/longhorn-1.7.1.tgz
+    version: 1.7.1
+generated: "2024-10-28T15:16:41.743886+09:00"
