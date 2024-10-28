@@ -153,4 +153,26 @@ entries:
     urls:
     - https://kubeops2.github.com/get-kubeops/charts/longhorn-1.7.1.tgz
     version: 1.7.1
-generated: "2024-10-28T15:39:34.281996+09:00"
+  operator:
+  - apiVersion: v2
+    appVersion: v6.0.4
+    created: "2024-10-28T09:53:38.978608036Z"
+    description: A Helm chart for MinIO Operator
+    digest: 3c305282c98993ec4685671d4a89479a5ba193955c490c80c1c5962e66d073b5
+    home: https://min.io
+    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
+    keywords:
+    - storage
+    - object-storage
+    - S3
+    maintainers:
+    - email: dev@minio.io
+      name: MinIO, Inc
+    name: operator
+    sources:
+    - https://github.com/minio/operator
+    type: application
+    urls:
+    - https://github.com/kubeops2/get-prime/releases/download/operator-6.0.4/operator-6.0.4.tgz
+    version: 6.0.4
+generated: "2024-10-28T09:53:38.978639024Z"
