@@ -1,5 +1,41 @@
 apiVersion: v1
 entries:
+  argo-cd:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump argo-cd to v2.12.6
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v2.12.6
+    created: "2024-10-29T07:22:06.416450712Z"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.27.6
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: fe7848062bcde0e9b643481cd7c7ea74cf7def0075dab7ff970266a3cd662bf0
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    kubeVersion: '>=1.25.0-0'
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-cd
+    sources:
+    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
+    - https://github.com/argoproj/argo-cd
+    urls:
+    - https://github.com/kubeops2/get-prime/releases/download/argo-cd-7.6.12/argo-cd-7.6.12.tgz
+    version: 7.6.12
   longhorn:
   - apiVersion: v1
     appVersion: v1.7.2
@@ -65,4 +101,4 @@ entries:
     urls:
     - https://github.com/kubeops2/get-prime/releases/download/longhorn-1.7.1/longhorn-1.7.1.tgz
     version: 1.7.1
-generated: "2024-10-29T06:44:06.280052134Z"
+generated: "2024-10-29T07:22:06.416461863Z"
