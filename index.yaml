@@ -1,0 +1,156 @@
+apiVersion: v1
+entries:
+  argo-cd:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump argo-cd to v2.12.6
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v2.12.6
+    created: "2024-10-29T07:22:06.416450712Z"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.27.6
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: fe7848062bcde0e9b643481cd7c7ea74cf7def0075dab7ff970266a3cd662bf0
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    kubeVersion: '>=1.25.0-0'
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-cd
+    sources:
+    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
+    - https://github.com/argoproj/argo-cd
+    urls:
+    - https://github.com/kubeops2/get-prime/releases/download/argo-cd-7.6.12/argo-cd-7.6.12.tgz
+    version: 7.6.12
+  argo-rollouts:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: add description for manual secret creation
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v1.7.2
+    created: "2024-10-29T07:24:49.281077119Z"
+    description: A Helm chart for Argo Rollouts
+    digest: 4eff422b09a650a77ca6f39800269a414acefcb9ee58aff8dae0bad064428791
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
+    keywords:
+    - argoproj
+    - argo-rollouts
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-rollouts
+    sources:
+    - https://github.com/argoproj/argo-rollouts
+    urls:
+    - https://github.com/kubeops2/get-prime/releases/download/argo-rollouts-2.37.7/argo-rollouts-2.37.7.tgz
+    version: 2.37.7
+  argo-workflows:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: Avoid to create ClusterRole for cluster template when singleNamespace
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v3.5.11
+    created: "2024-10-29T07:24:49.383807677Z"
+    description: A Helm chart for Argo Workflows
+    digest: e8f48f18592539db18d81d6c6353dc5cecff6af65578bf5141a6e92acf219aa5
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-workflows.readthedocs.io/en/stable/assets/logo.png
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-workflows
+    sources:
+    - https://github.com/argoproj/argo-workflows
+    type: application
+    urls:
+    - https://github.com/kubeops2/get-prime/releases/download/argo-workflows-0.42.5/argo-workflows-0.42.5.tgz
+    version: 0.42.5
+  longhorn:
+  - apiVersion: v1
+    appVersion: v1.7.2
+    created: "2024-10-29T06:44:06.280037556Z"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: a90e44a113d68dc2984fb6d3e17fcd127b3fee59d2812256790d367dcd2f6ccf
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
+    urls:
+    - https://github.com/kubeops2/get-prime/releases/download/longhorn-1.7.2/longhorn-1.7.2.tgz
+    version: 1.7.2
+  - apiVersion: v1
+    appVersion: v1.7.1
+    created: "2024-10-29T06:44:06.099497082Z"
+    description: Longhorn is a distributed block storage system for Kubernetes.
+    digest: 2c4c199760285dd3029a045291299bca2bcc0321efd09463bd794be3eafd903a
+    home: https://github.com/longhorn/longhorn
+    icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/longhorn/icon/color/longhorn-icon-color.png
+    keywords:
+    - longhorn
+    - storage
+    - distributed
+    - block
+    - device
+    - iscsi
+    - nfs
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: maintainers@longhorn.io
+      name: Longhorn maintainers
+    name: longhorn
+    sources:
+    - https://github.com/longhorn/longhorn
+    - https://github.com/longhorn/longhorn-engine
+    - https://github.com/longhorn/longhorn-instance-manager
+    - https://github.com/longhorn/longhorn-share-manager
+    - https://github.com/longhorn/longhorn-manager
+    - https://github.com/longhorn/longhorn-ui
+    - https://github.com/longhorn/longhorn-tests
+    - https://github.com/longhorn/backing-image-manager
+    urls:
+    - https://github.com/kubeops2/get-prime/releases/download/longhorn-1.7.1/longhorn-1.7.1.tgz
+    version: 1.7.1
+generated: "2024-10-29T07:24:49.383819078Z"
