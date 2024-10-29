@@ -36,6 +36,58 @@ entries:
     urls:
     - https://github.com/kubeops2/get-prime/releases/download/argo-cd-7.6.12/argo-cd-7.6.12.tgz
     version: 7.6.12
+  argo-rollouts:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: add description for manual secret creation
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v1.7.2
+    created: "2024-10-29T07:24:49.281077119Z"
+    description: A Helm chart for Argo Rollouts
+    digest: 4eff422b09a650a77ca6f39800269a414acefcb9ee58aff8dae0bad064428791
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
+    keywords:
+    - argoproj
+    - argo-rollouts
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-rollouts
+    sources:
+    - https://github.com/argoproj/argo-rollouts
+    urls:
+    - https://github.com/kubeops2/get-prime/releases/download/argo-rollouts-2.37.7/argo-rollouts-2.37.7.tgz
+    version: 2.37.7
+  argo-workflows:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: Avoid to create ClusterRole for cluster template when singleNamespace
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v3.5.11
+    created: "2024-10-29T07:24:49.383807677Z"
+    description: A Helm chart for Argo Workflows
+    digest: e8f48f18592539db18d81d6c6353dc5cecff6af65578bf5141a6e92acf219aa5
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-workflows.readthedocs.io/en/stable/assets/logo.png
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-workflows
+    sources:
+    - https://github.com/argoproj/argo-workflows
+    type: application
+    urls:
+    - https://github.com/kubeops2/get-prime/releases/download/argo-workflows-0.42.5/argo-workflows-0.42.5.tgz
+    version: 0.42.5
   longhorn:
   - apiVersion: v1
     appVersion: v1.7.2
@@ -101,4 +153,4 @@ entries:
     urls:
     - https://github.com/kubeops2/get-prime/releases/download/longhorn-1.7.1/longhorn-1.7.1.tgz
     version: 1.7.1
-generated: "2024-10-29T07:22:06.416461863Z"
+generated: "2024-10-29T07:24:49.383819078Z"
