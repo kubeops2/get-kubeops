@@ -1,20 +1,19 @@
-## Usage
+## How to Use
 
-[Helm](https://helm.sh) must be installed to use the charts.  Please refer to
-Helm's [documentation](https://helm.sh/docs) to get started.
+[Helm](https://helm.sh) must be installed to use the charts.  
+Please refer to Helm's [documentation](https://helm.sh/docs) to get started.
 
 Once Helm has been set up correctly, add the repo as follows:
 
-  helm repo add kubeops https://kubeops.github.io/get-prime
+  helm repo add kubeops https://kubeops2.github.io/get-prime
 
-If you had already added this repo earlier, run `helm repo update` to retrieve
-the latest versions of the packages.  You can then run `helm search repo
-kubeops` to see the charts.
+If you had already added this repo earlier, run `helm repo update` to retrieve the latest versions of the packages.  
+You can then run `helm search repo kubeops` to see the charts.  
 
-To install the <chart-name> chart:
+To install the longhorn chart:
 
-    helm install <chart-name> kubeops/<chart-name>
+    helm install longhorn kubeops/longhorn --namespace longhorn-system --create-namespace
 
 To uninstall the chart:
 
-    helm delete <chart-name>
+    helm delete longhorn -n longhorn-system
