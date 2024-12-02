@@ -88,6 +88,37 @@ entries:
     urls:
     - https://github.com/kubeops2/get-prime/releases/download/argo-workflows-0.42.5/argo-workflows-0.42.5.tgz
     version: 0.42.5
+  cert-manager:
+  - annotations:
+      artifacthub.io/category: security
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/signKey: |
+        fingerprint: 1020CF3C033D4F35BAE1C19E1226061C665DF13E
+        url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
+    apiVersion: v2
+    appVersion: v1.16.2
+    created: "2024-12-02T02:19:03.199114358Z"
+    description: A Helm chart for cert-manager
+    digest: 0e8286950140965f7dcf5b04fb385be11672166af835f93096499c3f35740927
+    home: https://cert-manager.io
+    icon: https://raw.githubusercontent.com/cert-manager/community/4d35a69437d21b76322157e6284be4cd64e6d2b7/logo/logo-small.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    kubeVersion: '>= 1.22.0-0'
+    maintainers:
+    - email: cert-manager-maintainers@googlegroups.com
+      name: cert-manager-maintainers
+      url: https://cert-manager.io
+    name: cert-manager
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://github.com/kubeops2/get-prime/releases/download/cert-manager-v1.16.2/cert-manager-v1.16.2.tgz
+    version: v1.16.2
   longhorn:
   - apiVersion: v1
     appVersion: v1.7.2
@@ -153,4 +184,4 @@ entries:
     urls:
     - https://github.com/kubeops2/get-prime/releases/download/longhorn-1.7.1/longhorn-1.7.1.tgz
     version: 1.7.1
-generated: "2024-10-29T07:24:49.383819078Z"
+generated: "2024-12-02T02:19:03.199125429Z"
