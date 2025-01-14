@@ -1,0 +1,33 @@
+server:
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hosts:
+      - argo-workflows.getprime.ai
+    annotations:
+      cert-manager.io/cluster-issuer: "prime-issuer"
+    tls:
+      - secretName: argo-workflows-tls
+        hosts:
+          - argo-workflows.getprime.ai
+  extraArgs:
+    - --auth-mode=server
+workflow:
+  serviceAccount:
+    create: true
+    name: argo-workflow
+executor:
+  serviceAccount:
+    create: true
+    name: argo-executor
+postgresql:
+  enabled: false
+externalDatabase:
+  host: argo-workflows-db-rw.cnpg-system.svc.cluster.local
+  port: 5432
+  database: argo
+  user: argo
+  password: d2SXfoq13YcDUWXDYu3ba1vLecCkMnBbrGnhAkm4UVrjrVLY57Fz1Cwh7WqBrMtJ
+useStaticCredentials: false
+artifactRepository:
+  archiveLogs: true
